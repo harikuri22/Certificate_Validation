@@ -8,7 +8,7 @@ import javax.ws.rs.core.MediaType;
 /**
  * Root resource (exposed at "myresource" path)
  */
-@Path("myresource")
+@Path("validate")
 public class MyResource {
 
     /**
@@ -26,10 +26,10 @@ public class MyResource {
     }
 
     @GET
-    @Path("/getnow")
+    @Path("/validate_certificate")
     @Produces(MediaType.TEXT_PLAIN)
-    public String getnow() {
+    public String validate_certificate() {
 
-        return "Hello, Hari!";
+        return "true";
     }
 }
